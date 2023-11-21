@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haru Enterprise</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./vendors/Bootstrap/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+  <!-- end font -->
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="./img/haru.png" alt="haru-enterprise" width="100px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#haru-navbar">
+        <i class="fa-solid fa-grip-lines" style="color: #000000;"></i>
+      </button>
+      <span class="navbar-text" style="font-family: 'Merriweather', serif; font-size: 20px;">
+        Your Dream Electronics Marketplace
+      </span>
+      <div class="collapse navbar-collapse" id="haru-navbar" style="font-family: 'Jost', sans-serif;">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#message">Live Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#live-event">Live Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="signUp()">
+              <i class="fa-solid fa-right-to-bracket fa-sm" style="color: #807f7f;"></i>
+              Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#deal-zone">Deal Zone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wish List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compare List</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-cart-arrow-down" style="color: #8d8b8b; font-size: 20px;"></i>
+            </a>
+          </li>
+        </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" id="search-item" onkeyup="search()">
+        <button class="btn btn-outline-dark" type="submit" id="search-item-button">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- collapse button bar -->
+  <div class="container-fluid button-collapse bg-light text-center" style="font-family: 'Jost', sans-serif;margin: 0px;" id="groupButton">
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#photography-collapse">Photography</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#pro-video-collapse">Pro Video</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#pro-audio-collapse">Pro Audio</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#lighting-collapse">Lighting</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#drone-collapse">Drones</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#camcoder-collapse">Camcoders</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#surveillance-collapse">Surveillance</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#solar-collapse">Optics</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#mobile-collapse">Mobile</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#tv-collapse">TV & Entertainment</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#computer-collapse">Computers</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#accessories-collapse">Camera Accessories</button>
+      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#used-collapse">Used</button>
+  </div>
+  <!-- end collapse button bar -->
+
+  <!-- collapse bar -->
+
+  <!-- photography -->
+  <div class="container-fluid collapse-items collapse text-center" id="photography-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#mirrorless-camera" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/a7r4.webp" alt="a7r4" width="200px">
+          <p>Mirrorless</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/5dmk4.jpeg" alt="a7r4" width="200px">
+          <p>DSLR</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/phaseOne.jpeg" alt="a7r4" width="300px">
+          <p>Medium Format</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/lens.jpeg" alt="a7r4" width="200px">
+          <p>Lens</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end photography -->
+
+  <!-- Pro Video -->
+  <div class="container-fluid collapse-items  collapse text-center" id="pro-video-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/camcoder.webp" alt="a7r4" width="200px">
+          <p>Camcoders</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/cinematic.jpeg" alt="a7r4" width="200px">
+          <p>Digital Cinema Camera</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/industrial camera.png" alt="a7r4" width="300px" height="200px">
+          <p>Industrial Camera</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/ptz.jpeg" alt="a7r4" width="200px" >
+          <p>PTZ Camera and Solutions</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end pro video -->
+  
+  <!-- pro audio -->
+  <div class="container-fluid collapse-items collapse text-center" id="pro-audio-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/studio recording.jpeg" alt="a7r4" width="300px">
+          <p>Studio Recording</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/wireless microphones.webp" alt="a7r4" width="200px" height="210px">
+          <p>Wireless Microphone System</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/podcast microphone.webp" alt="a7r4" width="300px" height="210px">
+          <p>Podcast Microphone System</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/rode mic.jpeg" alt="a7r4" width="300px" height="210px" >
+          <p>Cinematic Recorder</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end pro audio -->
+  
+  <!-- lighting collapse -->
+  <div class="container-fluid collapse-items  collapse text-center" id="lighting-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/broncolor.jpeg" alt="a7r4" width="300px">
+          <p>broncolor</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/profoto.jpeg" alt="a7r4" width="300px" >
+          <p>Profoto</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/elinchrom.webp" alt="a7r4" width="300px">
+          <p>Elinchrom</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/nanlite.jpeg" alt="a7r4" width="300px"  >
+          <p>Nanlite</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end lighting collapse -->
+
+  <!-- drone collapse -->
+  <div class="container-fluid collapse-items  collapse text-center" id="drone-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/phantom .png" alt="a7r4" width="300px">
+          <p>DJI Phantom System</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/matrice.jpeg" alt="a7r4" width="300px" height="300px" >
+          <p>DJI Matrice System</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/mavic.webp" alt="a7r4" width="300px" height="300px">
+          <p>DJI Mavic System</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/spark.jpeg" alt="a7r4" width="300px"  >
+          <p>DJI Spark System</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end drone collapse -->
+
+  <!-- camcoder collapse -->
+  <div class="container-fluid collapse-items collapse text-center" id="camcoder-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/action.webp" alt="a7r4" width="300px">
+          <p>Action Camera</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/panasonic.jpeg" alt="a7r4" width="300px" height="300px" >
+          <p>Consumer Camcoder</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/pro camcoder.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>Professional Camcoder</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/360 cam.png" alt="a7r4" width="300px"  >
+          <p>360 Camera</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end camcoder collapse -->
+
+  <!-- surveillance cam -->
+  <div class="container-fluid collapse-items  collapse text-center" id="surveillance-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-4">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/surveillance.jpeg" alt="a7r4" width="200px">
+          <p>Surveillance Camera</p>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/security cam.webp" alt="a7r4" width="300px" height="240px" >
+          <p>Security Camera</p>
+        </a>
+      </div>
+      
+      <div class="col-sm-4">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/video recorder.jpeg" alt="a7r4" width="410px"  >
+          <p>Video Recorder and Hard Drives</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end curveillance cam -->
+
+  <!-- optic collapse -->
+  <div class="container-fluid collapse-items  collapse text-center" id="solar-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/solar glass.jpeg" alt="a7r4" width="200px" height="200px">
+          <p>Solar Eclipse Glasses</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/solar optic.jpeg" alt="a7r4" width="200px" height="200px">
+          <p>Solar Filter</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/binoculars.webp" alt="a7r4" width="200px">
+          <p>Binoculars</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/astronomical telescope.webp" alt="a7r4" width="200px">
+          <p>Astronomical Telescope</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- optic end collapse -->
+
+  <!-- mobile collapse -->
+  <div class="container-fluid collapse-items  collapse text-center" id="mobile-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/iphone.jpeg" alt="a7r4" width="300px">
+          <p>Apple</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/samsung.jpeg" alt="a7r4" width="300px" height="220px">
+          <p>Samsung</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/opppo.png" alt="a7r4" width="300px" height="220px">
+          <p>Oppo</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/huawei.jpeg" alt="a7r4" width="300px" height="220px">
+          <p>Huawei</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end mobile collapse -->
+
+  <!-- tv collapase -->
+  <div class="container-fluid collapse-items collapse text-center" id="tv-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/sony tv.png" alt="a7r4" width="300px">
+          <p>TV</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/bluray player.webp" alt="a7r4" width="300px" height="300px">
+          <p>Blu-ray Player</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/apple tv.webp" alt="a7r4" width="300px">
+          <p>Apple TV</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/soundbar.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>Soundbar and Speakers</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end tv collapse -->
+
+  <!-- computer collapse -->
+  <div class="container-fluid collapse-items  collapse text-center" id="computer-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/laptop.jpeg" alt="a7r4" width="300px">
+          <p>Laptop</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/macbook.webp" alt="a7r4" width="300px" >
+          <p>MacBook</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/ipad.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>Ipad & Tablets</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/pc.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>PC & Workstations</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end computer collaspe -->
+
+  <!-- accessories collapse -->
+  <div class="container-fluid collapse-items collapse text-center" id="accessories-collapse" style="font-family: 'Jost', sans-serif;">
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/tripod.jpeg" alt="a7r4" width="300px">
+          <p>Tripod</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/lightstand.jpeg" alt="a7r4" width="300px" >
+          <p>Light Stand</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/camera bag.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>Camera Bag</p>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" style="text-decoration: none; color: #000000;font-size: 20px;">
+          <img src="./img/trigger.jpeg" alt="a7r4" width="300px" height="300px">
+          <p>Other Accessories</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end accessories  collapse-->
+  
+  <!-- used -->
+  <div class="container-fluid collapse-items  collapse text-center" id="used-collapse" style="font-family: 'Jost', sans-serif;">
+    <h1 class="m-5">We don't sell used items you poor bastard</h1>
+  </div>
+  <!-- used collapse -->
+
+  <!-- end collapse bar -->
+ 
+
+
+ 
+    <!-- contact expert -->
+  <div class="container-lg contact mt-4">
+    <div class="d-flex" style="font-family: 'Jost', sans-serif;">
+      <img src="./img/11.jpg" alt="myPic">
+      <p>Ask our Expert for what to buy.</p>
+      <div class="d-flex ms-auto" style="font-family: 'Jost', sans-serif; position: relative;">
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contactModalText" data-bs-whatever="@text">Text</button>
+        <div class="divider"></div>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#requestCallBack" data-bs-whatever="@requestCallback">Request Callback</button>
+        <div class="divider"></div>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contactModalEmail" data-bs-whatever="@email">Email</button>
+      </div>
+
+      <div class="modal fade" id="contactModalText" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="+696969696969" disabled>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="contactModalEmail" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Email</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="saisay@haru-enterprise.com" disabled>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="modal fade" id="requestCallBack" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="requestCallbackLabel">Request Callback</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              We've notified our expert to call you back in office hours.
+              Please notify that you need to create an account or download our app in order to get the call.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact expert -->
+
+  <!-- carousel -->
+  <div class="container-sm mt-3" style="font-family: 'Jost', sans-serif;">
+    <div class="row">
+      <div class="col-md-8">
+        <div id="haruCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#haruCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#haruCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#haruCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/broncolorpromo.webp" class="d-block" alt="broncolorPromo">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-center text-warning">broncolor mid-year sale</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/profotopromo.jpeg" class="d-block" alt="profotoPromo">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-center text-warning">Profoto Spring Sale</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/godoxpromo.webp" class="d-block" alt="godoxpromo">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-center text-warning">Godox Summer Sale</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#haruCarousel" data-bs-slide="prev">
+            <i class="fa-solid fa-angles-left" style="color: gold;font-size: 30px"></i>
+           
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#haruCarousel" data-bs-slide="next">
+            <i class="fa-solid fa-angles-right" style="color: gold; font-size: 30px;"></i>
+           
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4 overflow-items">
+        <div class="card mb-3" style="max-width: 540px;">
+         <a href="#" style="text-decoration: none; color: black;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/overflow/1.webp" class="img-fluid rounded-start p-2" alt="1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eos?</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+         </a>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/overflow/2.jpeg" class="img-fluid rounded-start p-2" alt="2">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eos?</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/overflow/3.jpeg" class="img-fluid rounded-start p-2" alt="3">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eos?</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/overflow/4.jpeg" class="img-fluid rounded-start p-2" alt="4">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eos?</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+         <a href="#" style="text-decoration: none; color: black;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/overflow/5.jpeg" class="img-fluid rounded-start p-2" alt="5">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, eos?</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+         </a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <!-- end carousel -->
+
+
+  <!-- live chat -->
+  
+<div class="offcanvas offcanvas-end" id="message">
+    <div class="offcanvas-header bg-dark">
+        <div class="position-relative">
+          <img src="./img/babe.JPG" alt="babe">
+        <span class="active-now"></span>
+        </div>
+        <p class="text-secondary mx-2 me-auto">Active Now</p>
+        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" type="button"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container-sm welcome-text">
+          <p style="font-family: 'Jost', sans-serif;">Welcome to Haru Enterprise!</p>
+          <p style="font-family: 'Jost', sans-serif;">You are lucky to chat with the prettiest chat bot today!</p>
+          <p style="font-family: 'Jost', sans-serif;">Since I'm a bot, I'll only talk you in the bot language! :P</p>
+        </div>
+
+        <div class="clientMsg"></div>
+        <div class="botMsg"></div>
+        
+    </div>
+    <div class="offcanvas-footer d-flex">
+      <input type="text" class="form-control m-3" id="msgInput" onkeydown="enterMsg(event)">
+      <button class="btn btn-dark text-white float-end px-3 m-3" type="button" style="font-family: 'Jost', sans-serif;" onclick="sendMsg()">
+        <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+      </button>
+    </div>
+</div>
+
+
+  <!-- end live chat -->
+
+  <!-- sign up -->
+    <div class="container-sm text-white text-center" id="sign-up" style="font-family: 'Jost', sans-serif;" >
+      <button type="button" class="btn-close btn-close-white float-end" onclick="closeSignUp()"></button>
+      <p>Big Discount</p>
+      <h1>Get 10% OFF</h1>
+      <p>Sign Up to our newsletter to get the latest articles, lookbooks & voucher code direct to your inbox.</p>
+      <div class="container-sm d-flex input-group w-50">
+        <input type="email" class="form-control" placeholder="Enter Email">
+        <button class="btn btn-dark text-white">Submit</button>
+      </div>
+      <p class="pt-5 p-3">Sign Up for exclusive updates</p>
+      <div class="sign-up-brand text-white text-center">
+        <a href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" style="color: white;"></i>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: white;"></i></a></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp" style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-line" style="color: white;"></i></a>
+      </div>
+    </div>
+   
+  <!-- end sign up -->
+  
+  
+
+  <!-- about-us -->
+  <div class="container-md bg-light text-center mt-3 py-5" style="font-family: 'Jost', sans-serif;" id="about-us">
+    <h1 class="heading">Haru Enterprise</h1>
+    <p>Get to know the people who know your gear best.</p><br>
+    <p>Haru Enterprise is not a big box store, or a faceless chain... or a personality-free zone. Haru Enterprise is a group of people who are passionate about the things you're passionate about—from photography, film, music and audio to art and technology, creating and imagining.</p>
+    <h4>Your Creative Partner Since 2023.</h4>
+    <h6>Here's our Founder Romantic Video! Enjoy :D</h6>
+    <video autoplay width="50%" id="videoOfUs" onclick="playPauseVideo()">
+      <source src="./img/92155e86-5ed8-4c26-84ff-112b604d6500.mp4">
+    </video>
+    <button class="btn btn-success d-block my-4 m-auto" onclick="playPauseVideo()">Play/Pause</button>
+  </div>
+  <!-- end about-us -->
+
+  <!-- live event -->
+  <div class="container-md bg-light" style="font-family: 'Jost', sans-serif;" id="live-event">
+    <h1 class="text-center heading">Events</h1>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/surveillance.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Canon Live Show</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 24 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/event2.jpeg" class="img-fluid rounded-start p-2" alt="event2">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Learn to stream with phones</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 31 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/Russell-Marhull.jpg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Camera Operators Workshop</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 53 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/event video.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Shooting Event Video</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 24 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/photo workshop.jpeg" class="img-fluid rounded-start p-2" alt="event2">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Digital Camera Skills</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 34 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/mid year sale.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Canon Big Sales</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 57 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/wildlife.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Wildlife Photography Tips&Tricks</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 13 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/advance wildlife.jpeg" class="img-fluid rounded-start p-2" alt="event2">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Advanced Wildlife Photography Workshop</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 35 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/planning wildlife.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">National Geography Photographers Sharing</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 22 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/portrait.jpeg" class="img-fluid rounded-start p-2" alt="event1">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Portrait Photography Workshop</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 24 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/fashion.jpeg" class="img-fluid rounded-start p-2" alt="event2">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Fashion Photography Workshop</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 34 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/event/commercial.jpeg" class="img-fluid rounded-start p-2" alt="event2">
+              <button class="btn btn-primary text-center m-auto d-block mt-4">More Info</button>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Commercial Photography Workshop</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolore voluptates tempora magni iure consequuntur necessitatibus, accusantium eaque ab beatae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 34 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end live event -->
+  
+  <!-- Deal Zone -->
+  <div class="container-fluid bg-light mt-4 pt-3" style="font-family: 'Jost', sans-serif;" id="deal-zone">
+    <h1 class="heading text-center">Deal Zone <i class="fa-solid fa-tag" style="color: #ffffff;"></i></h1>
+    <div class="container-md mt-3">
+      <div class="row">
+        <div class="col-sm-4 p-3" style="background-color: rgb(232, 228, 228);border-radius: 5px;">
+          <!-- brand list -->
+          <div class="container-sm brand-list">
+            <h5 class="p-2">Brand</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Sony</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Canon</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Nikon</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Panasonic</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Olympus</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Hasselblad</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">PhaseOne</label>
+            </div>
+          </div>
+          <!-- end brand list -->
+          <!-- price range -->
+          <div class="container-sm brand-list mt-3">
+            <h5 class="p-2">Price Range</h5>
+            <input type="range" min="0" max="50000" value="1000" id="myRange">
+            <p>Price-Range: $<span id="value"></span> </p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Lowest First</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Highest First</label>
+            </div>
+          </div>
+          <!-- end price range -->
+          <!-- Sensor Size -->
+          <div class="container-sm brand-list mt-3">
+            <h5 class="p-2">Sensor Size</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Full Frame(35mm)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Crop Frame</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">Medium Format</label>
+            </div>
+          </div>
+          <!-- end sensor size -->
+          <!-- Customer Rating -->
+          <div class="container-sm brand-list mt-3">
+            <h5 class="p-2">Customers' Ratings</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label">
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+              </label>
+            </div>
+          </div>
+          <!-- end customer Rating -->
+          <!-- estimate cost -->
+          <div class="container-sm brand-list mt-3">
+            <h5 class="p-2">Calculate Estimate</h5>
+            <p>Order over $3000, discount = 1%</p>
+            <p>Order over $5000, discount = 2%</p>
+            <p>Order over $10000, discount = 3% and free shipping.</p>
+            <p>Order over $50000, discount = 5% and free shipping.</p>
+            <p>Commercial Tax is 7%.</p>
+            <p>Shipping Cost & Insurance cost is 10%.</p>
+            <input type="number" class="form-control" style="border-radius: 40px;background-color:rgb(232, 228, 228)" id="estimateValue" placeholder="Calculate" onkeydown="pressEnterEstimate(event)">
+            <button class="btn btn-outline-dark mt-2 m-auto d-block" onclick="estimateButton()">Calculate</button>
+            <p id="estimateResult" class="mt-2"></p>
+          </div>
+          <!-- end estimate cost -->
+          <!-- Search -->
+          <div class="container-sm brand-list mt-3">
+            <form class="p-2">
+              <input class="form-control me-2" type="search" placeholder="Search" style="background-color:rgb(232, 228, 228); border-radius: 40px;">
+              <button class="btn btn-outline-dark mt-2 m-auto d-block" type="submit">Search</button>
+            </form>
+          </div>
+          <!-- end Search -->
+        </div>
+        <!-- products -->
+        <div class="col-sm-8" id="product-list">
+          <div class="container-md" id="mirrorless-camera">
+            <!-- a7r2 -->
+            <div class="card mb-3 product">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div id="a7r2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#a7r2" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#a7r2" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#a7r2" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#a7r2" data-bs-slide-to="3"></button>
+                      <button type="button" data-bs-target="#a7r2" data-bs-slide-to="4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/products/sony/a7r2(1).png" class="d-block w-100" alt="pic 1">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/products/sony/a7r2(2).png" class="d-block w-100" alt="pic 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/products/sony/a7r2(3).png" class="d-block w-100" alt="pic 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/products/sony/a7r2(5).png" class="d-block w-100" alt="pic 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/products/sony/a7r2(6).png" class="d-block w-100" alt="pic 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#a7r2" data-bs-slide="prev">
+                      <i class="fa-solid fa-circle-left" style="color: darkblue; font-size: 30px;"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#a7r2" data-bs-slide="next">
+                      <i class="fa-solid fa-circle-right" style="color: darkblue; font-size: 30px;"></i>
+                    </button>
+                  </div>
+                  <h3 class="text-center text-secondary">$1799.00</h3>
+                  <h3 class="text-center text-secondary">Available Color <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                    <i class="fa-solid fa-circle" style="color: gray;"></i></h3>
+                  <div class="btn-group mx-3 my-3 m-auto d-flex">
+                    <button class="btn btn-outline-success">Add To Cart</button>
+                    <button class="btn btn-outline-success">Add To Wishlist</button>
+                    <button class="btn btn-outline-success">Add To Compare</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Sony Alpha RII</h5>
+                    <p class="card-text"><label class="form-check-label">
+                      <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                    </label></p>
+                    <div class="divider-flat-percent"></div>
+                    <h5>Key Feature</h5>
+                    <ul>
+                      <li>World's first1 full-frame back-illuminated Exmor R® CMOS sensor - 42.4MP</li>
+                      <li>2.4-million dot XGA OLED Tru-Finder™ w/ ZEISS T* coating</li>
+                      <li>5-axis in-body image stabilization optimized for 42.4MP full-frame</li>
+                      <li>4K movie recording with full pixel readout and no pixel binning</li>
+                      <li>Fast Hybrid AF with 399 focal plane phase-detection AF points</li>
+                      <li>Simple connectivity to smartphones via Wi-Fi® and NFC™ w/ camera apps</li>
+                      <li>Fast focal plane phase-detection AF realized with A-mount lenses</li>
+                      <li>Shutter vibration suppression, first curtain shutter, and silent shutter</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
+              <!-- end a7r2 -->
+              <!-- a7r3 -->
+              <div class="card mb-3 product">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div id="a7r3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#a7r3" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#a7r3" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#a7r3" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#a7r3" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#a7r3" data-bs-slide-to="4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="./img/products/sony/a7r3(1).png" class="d-block w-100" alt="pic 1">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="./img/products/sony/a7r3(2).png" class="d-block w-100" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r3(3).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r3(4).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r3(5).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#a7r3" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-left" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#a7r3" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-right" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                    </div>
+                    <h3 class="text-center text-secondary">$2499.00</h3>
+                    <h3 class="text-center text-secondary">Available Color <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                      <i class="fa-solid fa-circle" style="color: gray;"></i></h3>
+                    <div class="btn-group mx-3 my-3 m-auto d-flex">
+                      <button class="btn btn-outline-success">Add To Cart</button>
+                      <button class="btn btn-outline-success">Add To Wishlist</button>
+                      <button class="btn btn-outline-success">Add To Compare</button>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Sony Alpha RIII</h5>
+                      <p class="card-text"><label class="form-check-label">
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      </label></p>
+                      <div class="divider-flat-percent"></div>
+                      <h5>Key Feature</h5>
+                      <ul>
+                        <li>Spectacular 42.4MP full-frame resolution w/evolved image processing</li>
+                        <li>Up to 10fps Silent or Mechanical Shutter with AE/AF tracking</li>
+                        <li>Incredible autofocus: 399 phase-detection/425 contrast AF points</li>
+                        <li>15-stop dynamic range, 14-bit umcrompressed RAW 15, ISO 50 to 102,400</li>
+                        <li>4K HDR Movie w/full pixel readout and no pixel binning</li>
+                        <li>5-axis in-body image stabilization, 5.5 step shutter speed advantage</li>
+                        <li>Pixel Shift Multi SHotting for superior resolution from 42.4MP</li>
+                        <li>Secure and versatile dual media slots(UHS-II SD Card compatible)</li>
+                        <li>Long-lasting Z battery w/approx. 2.2x the capacity of W battiers</li>
+                        <li>Instant HDR workflow with Hybrid Log-Gamma(HLG) encoding</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+              <!-- end a7r3 -->
+              <!-- a7r4 -->
+              <div class="card mb-3 product">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div id="a7r4" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#a7r4" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#a7r4" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#a7r4" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#a7r4" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#a7r4" data-bs-slide-to="4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="./img/products/sony/a7r4(1).png" class="d-block w-100" alt="pic 1">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="./img/products/sony/a7r4(2).png" class="d-block w-100" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r4(3).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r4(4).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#a7r4" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-left" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#a7r4" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-right" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                    </div>
+                    <h3 class="text-center text-secondary">$3200.00</h3>
+                    <h3 class="text-center text-secondary">Available Color <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                      <i class="fa-solid fa-circle" style="color: gray;"></i></h3>
+                    <div class="btn-group mx-3 my-3 m-auto d-flex">
+                      <button class="btn btn-outline-success">Add To Cart</button>
+                      <button class="btn btn-outline-success">Add To Wishlist</button>
+                      <button class="btn btn-outline-success">Add To Compare</button>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Sony Alpha RIV</h5>
+                      <p class="card-text"><label class="form-check-label">
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      </label></p>
+                      <div class="divider-flat-percent"></div>
+                      <h5>Key Feature</h5>
+                      <ul>
+                        <li>World's first 61MP full-frame back-illuminated Exmor R sensor</li>
+                        <li>15-stop dynamic range3, 14-bit uncompressed RAW11, ISO 50 to 102,400510</li>
+                        <li>Up to 10fps4 continuous shooting at 61MP with AE/AF tracking</li>
+                        <li>Incredible autofocus: 567 phase-detection / 425 contrast AF points</li>
+                        <li>Real-time Tracking5 and Real-time Eye AF for human, animal and movie</li>
+                        <li>APS-C crop mode delivers stunning 26.2MP2 high resolution images</li>
+                        <li>5.76 million dot UXGA OLED Tru-Finder™ electronic viewfinder</li>
+                        <li>5-axis in-body image stabilization, 5.5 step13 shutter speed advantage</li>
+                        <li>High-speed 2.4 and 5GHz Wi-Fi15 / FTP transfer and wireless PC remote7</li>
+                        <li>Super speed USB Type-C™ (USB 3.2 Gen 1 compatible) and Micro USB</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+              <!-- end a7r4 -->
+              <!-- a7r5 -->
+              <div class="card mb-3 product">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div id="a7r5" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#a7r5" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#a7r5" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#a7r5" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#a7r5" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#a7r5" data-bs-slide-to="4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="./img/products/sony/a7r5(1).png" class="d-block w-100" alt="pic 1">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="./img/products/sony/a7r5(2).png" class="d-block w-100" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r5(3).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r5(4).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a7r5(5).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#a7r5" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-left" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#a7r5" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-right" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                    </div>
+                    <h3 class="text-center text-secondary">$3900.00</h3>
+                    <h3 class="text-center text-secondary">Available Color <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                      <i class="fa-solid fa-circle" style="color: gray;"></i></h3>
+                    <div class="btn-group mx-3 my-3 m-auto d-flex">
+                      <button class="btn btn-outline-success">Add To Cart</button>
+                      <button class="btn btn-outline-success">Add To Wishlist</button>
+                      <button class="btn btn-outline-success">Add To Compare</button>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Sony Alpha RV</h5>
+                      <p class="card-text"><label class="form-check-label">
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      </label></p>
+                      <div class="divider-flat-percent"></div>
+                      <h5>Key Feature</h5>
+                      <ul>
+                        <li>A whole new level of camera intelligence from new AI processing unit</li>
+                        <li>Next-generation AF with Real-time Recognition autofocus deep learning AI</li>
+                        <li>61.0 MP2 full-frame back-illuminated Exmor R™ CMOS sensor</li>
+                        <li>Advanced BIONZ XR™ engine boosts overall processing speed by up to 8x3</li>
+                        <li>Outstanding filmmaking with 8K 24p/25p4 and 4K 60p/50p5</li>
+                        <li>Advanced optical 5-axis in-body image stabilization for 8-step compensation6</li>
+                        <li>Unique 4-axis LCD monitor combining tilting convenience and side-opening flexibility</li>
+                        <li>Selectable large/medium/small RAW image sizes and quality</li>
+                        <li>Active Mode image stabilization for stable handheld movie shooting</li>
+                        <li>Human pose estimation utilizes subject form data recognition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+              <!-- end a7r5 -->
+              <!-- a7-3 -->
+              <div class="card mb-3 product">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div id="a7-3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#a7-3" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#a7-3" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#a7-3" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#a7-3" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#a7-3" data-bs-slide-to="4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="./img/products/sony/a73(1).png" class="d-block w-100" alt="pic 1">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="./img/products/sony/a73(2).png" class="d-block w-100" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a73(3).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a73(4).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/products/sony/a73(5).png" class="d-block w-100" alt="pic 3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#a7-3" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-left" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#a7-3" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-right" style="color: darkblue; font-size: 30px;"></i>
+                      </button>
+                    </div>
+                    <h3 class="text-center text-secondary">$2000.00</h3>
+                    <h3 class="text-center text-secondary">Available Color <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                      <i class="fa-solid fa-circle" style="color: gray;"></i></h3>
+                    <div class="btn-group mx-3 my-3 m-auto d-flex">
+                      <button class="btn btn-outline-success">Add To Cart</button>
+                      <button class="btn btn-outline-success">Add To Wishlist</button>
+                      <button class="btn btn-outline-success">Add To Compare</button>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Sony Alpha III</h5>
+                      <p class="card-text"><label class="form-check-label">
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                        <i class="fa-regular fa-star checked" style="color: #000000;"></i>
+                      </label></p>
+                      <div class="divider-flat-percent"></div>
+                      <h5>Key Feature</h5>
+                      <ul>
+                        <li>Advanced 24.2MP Back-Illuminated 35mm Full-frame Image Sensor</li>
+                        <li>15-stop4 dynamic range, 14-bit uncompressed RAW4, ISO 50 to 204,800</li>
+                        <li>Up to 10fps1 Silent5 or Mechanical Shutter with AE/AF tracking</li>
+                        <li>693 phase-detection / 425 contrast AF points w/ 93% image coverage</li>
+                        <li>Outstanding filmmaking with 8K 24p/25p4 and 4K 60p/50p5</li>
+                        <li>Eye-AF with AF-C; Direct AF point 4-way multi-selector; touch AF/li>
+                        <li>4K2 HDR3 Movie w/ full pixel readout, no pixel binning or crop</li>
+                        <li>Long-lasting Z battery for up to 710 images8 on a full charge</li>
+                        <li>Secure and versatile dual media slots (1 SD card slot UHS-II compatible)</li>
+                        <li>Human pose estimation utilizes subject form data recognition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+              <!-- end a7-3 -->
+          
+       
+      </div>
+          </div>
+            <!-- end products -->
+          </div>
+        </div>
+
+  </div>
+  <!-- end deal zone -->
+  <!-- footer -->
+  <div class="cotainer-fluid bg-dark text-white mt-4 footer p-3" style="font-family: 'Jost', sans-serif;">
+    <h1 class="pb-3 text-center">Contact Us</h1>
+   <div class="row">
+    <div class="col-sm-8">
+      <div>
+        <p class="text-center">Sign Up for Haru Enterprise for special offers and discount coupons.</p>
+        <div class="container-sm input-group d-flex justify-content-center align-item-center pb-3">
+          <input type="email" placeholder="Email" class="form-control" style="max-width: 300px;" required>
+          <button type="button" class="btn btn-light">Submit</button>
+        </div>
+      </div>
+      <div class="divider-flat"></div>
+        <div class="row mt-3">
+          <div class="col-sm-4">
+            <h4>Customer Service & Help</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Return Policy</li>
+              <li><a href="#">Track/Request a Return</a></li>
+              <li><a href="#">Unsubscribe from Mailing</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Site Directory</a></li>
+              <li><a href="#">Shop By Brand</a></li>
+              <li><a href="#"><strong>All Help Topics</strong></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Company Information</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">About Haru Enterprise</li>
+              <li><a href="#">Our Mars Superstore</a></li>
+              <li><a href="#">Hours of Operation</a></li>
+              <li><a href="#">Payboo/ Financing</a></li>
+              <li><a href="#">Affliate Program</a></li>
+              <li><a href="#">Manufacture Directory</a></li>
+              <li><a href="#">Career Oppotunities</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Other Haru Enterprise Sites</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Student Advantage</li>
+              <li><a href="#">B2B Corps</a></li>
+              <li><a href="#">Federal Marketplace</a></li>
+              <li><a href="#">Event Space</a></li>
+              <li><a href="#">Explora - News & Reviews</a></li>
+              <li><a href="#">Haru Enterprise Podcast</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div>  
+      <div class="col-sm-4 text-white info" style="border:1px solid white; border-radius: 5px;font-family: Arial, Helvetica, sans-serif;">
+        <ul class="pt-4 list-unstyled">
+          <li><strong>Sales & Expert Adivce</strong></li>
+          <li>+69 6969 6969 69</li>
+          <br>
+          <li><strong>Customer Service</strong></li>
+          <li>+96 9696 9696 96</li>
+        </ul>
+        
+        <p><i class="fa-regular fa-comment"></i>&nbsp;<a href="#" data-bs-toggle="offcanvas" data-bs-target="#message">Live Chat</a></p>
+        <p><i class="fa-regular fa-envelope"></i>&nbsp;<a href="#">Contact Us</a></p>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i>&nbsp;<a href="#">Trade in Your Gear</a></p>
+    
+        
+        <span><a href="#">Store Pick Up</a></span><br>
+        <span><a href="#">Haru Enterprise Cards</a></span><br>
+        <span><a href="#">Free Expedited Shipping</a></span>
+
+
+      </div>  
+    </div>
+  </div>   
+  
+  <!-- end footer -->
+
+  <script src="./vendors/Bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./vendors/jQuery/jquery"></script>
+  <script>
+    //sign up
+     function signUp(){
+      let openSignUp = document.querySelector('#sign-up');
+      if(openSignUp.style.visibility = 'hidden'){
+        openSignUp.style.visibility = 'visible';
+      }else{
+        openSignUp.style.visibility = 'visible';
+      }
+     }
+     
+     function closeSignUp(){
+      document.querySelector('#sign-up').style.visibility = 'hidden';
+     }
+
+     //input msg live chat
+     let chat = [];
+     let botChat = [];
+     function sendMsg(){
+      let inputMessageElement = document.querySelector('#msgInput');
+      let inputMessage = inputMessageElement.value;
+
+      let randomReply = Math.random();
+    
+      chat.push(inputMessage);
+      
+      
+      document.querySelector('.clientMsg').innerHTML = `<div class="msgboxBot">
+    <p>${inputMessage}</p>
+    </div>`;
+
+      document.querySelector('.botMsg').innerHTML = `<div class="botMsgReply">
+    <p>${randomReply}</p>
+    </div>`;
+
+      inputMessageElement.value = '';
+     }
+
+     function enterMsg(e){
+      if(event.key === 'Enter'){
+        sendMsg();
+      }
+     }
+
+     //about us video 
+     function playPauseVideo(){
+      let myVideo = document.querySelector('#videoOfUs');
+      if(myVideo.paused){
+        myVideo.play();
+      }else{
+        myVideo.pause();
+      }
+     }
+     
+     //second nav buttons
+     $(document).ready(
+      $('#groupButton button').click((event)=>{
+       $(event.currentTarget).addClass('show');
+       $('.collapse-items').removeClass('show');
+       $('#groupButton button').removeClass('show');
+      })
+     )
+
+     //slider Range Value
+     let slider = document.querySelector('#myRange');
+     let output = document.querySelector('#value');
+      output.innerHTML = slider.value;
+      slider.oninput = function(){
+        output.innerHTML = this.value;
+      }
+
+      //estimate cost
+      function estimateButton(){
+        let cost = document.querySelector('#estimateValue');
+        let costInput = Number(cost.value);
+        let tax = costInput * 0.07;
+        let shippingCost = costInput * 0.1;
+
+        if(costInput >= 0 && costInput <3000){
+          costInput = costInput + tax + shippingCost;
+        }else if(costInput >= 3000 && costInput < 5000){
+          costInput = costInput - (costInput * 0.01) + tax + shippingCost;
+        }else if(costInput >= 5000 && costInput < 10000){
+          costInput = costInput - (costInput * 0.02) + tax + shippingCost;
+        }else if(costInput >= 10000 && costInput < 50000){
+          costInput = costInput - (costInput * 0.03) + tax + shippingCost;
+        }else if(costInput >= 50000){
+          costInput = costInput - (costInput * 0.05) + tax + shippingCost;
+        }
+        document.querySelector('#estimateResult').innerHTML = `Your estimate : $ ${costInput}`;
+      }
+
+      function pressEnterEstimate(e){
+        if(event.key === 'Enter'){
+          estimateButton();
+        }
+      }
+       
+      //Search function
+      function search (){
+        const searchbox = document.querySelector('#search-item').value;
+        const storeItems = document.querySelector('#product-list');
+        const product = document.querySelectorAll('.product');
+        const productName = document.getElementsByTagName('h5');
+
+       
+        for (let i = 0; i < productName.length; i++) {
+         let match = product[i].getElementsByTagName('h5');
+
+         if(match){
+         let textValue = match.textContent || match.innerHTML;
+          if(textValue.indexOf(searchbox)){
+            product[i].style.display = '';
+          }else{
+            product[i].style.display = 'none';
+          }
+         }
+        }
+      }
+  </script>
+</body>
+</html>
